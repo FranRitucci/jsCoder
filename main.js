@@ -1,3 +1,4 @@
+/*
 //ENTRADA
 let nombreIngresado = (prompt("Ingrese su nombre"));
 //DATO
@@ -45,4 +46,44 @@ if (ESMAYOR) {
     alert("bienvenido/a a la clase N°2")
 } else{
     alert("Debes ser mayor de edad para la clase N°2");
+}*/
+
+//OPERADORES LOGICOS
+
+/*let suNumero = Number (prompt("Ingrese su numero"));
+
+if (suNumero >= 1000){
+    alert ("El numero ingresado es correcto");
+} else {
+    alert ("Su numero no es valido");
+}*/
+
+l/*et salude = prompt ("ingrese su saludo");
+
+if ((salude == "hola") || (salude == "buenas")){
+    alert ("Hola, gracias por tu saludo");
+} else{
+    alert("Ey! debes saludar para poder ingresar");
+}*/
+
+/*let saludo = prompt ("Ingrese su saludo");
+let nombre = prompt ("Ingrese su nombre");
+
+if ((saludo == "hola") && (nombre == "franco")){
+    alert ("Bienvenido, acceso concedido");
+} else{
+    alert("Acceso denegado");
+}*/
+
+// CICLOS FOR
+    //incremento
+
+for (let i= 1; i <=4; i++){
+    console.log("vuelta N°: " + i);
+}
+
+    //DECREMENTO
+
+for (let i= 4; i>=1;i--){
+    
 }
