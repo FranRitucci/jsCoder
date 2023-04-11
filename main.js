@@ -116,9 +116,127 @@
 
 // CICLO DO WHILE
 
-let otroNumero = 0;
+// let otroNumero = 0;
 
-do{
-    otroNumero = prompt ("Ingrese un numero");
-    console.log(otroNumero);
-} while (parseInt(otroNumero));
+// do{
+//     otroNumero = prompt ("Ingrese un numero");
+//     console.log(otroNumero);
+// } while (parseInt(otroNumero));
+
+//SENTENCIA SWITCH
+
+// let color = prompt("Ingrese un color primario");
+
+// switch (color){
+
+//     case "rojo":
+//     alert("Seleccionaste el color rojo.");
+// break;
+
+// case "azul":
+//     alert("Seleccionaste el color azul.");
+// break;
+
+// case "amarillo":
+//     alert("Seleccionaste el color amarillo.");
+// break;
+
+// default:
+//     alert("El color ingresado no es valido.");
+// break;
+// }
+
+// FUNCIONES
+
+// DECLARAMOS LA FUNCION
+
+// function saludar (){
+//     console.log("Hola coders");
+// }
+
+// // LLAMAR A LA FUNCION
+// saludar()
+
+// function solicitarNombre (){
+//     let nombreIngresado = prompt ("Ingrese su nombre: ");
+//     alert("El nombre ingresado es: " + nombreIngresado);
+// }
+
+// // PUEDO LLAMAR A LA FUNCION CUANTAS VECES QUIERA
+// solicitarNombre();
+// solicitarNombre();
+// solicitarNombre();
+
+
+//FUNCIONES CON PARAMETROS
+
+// function conParametros (parametro1, parametro2){
+//     console.log(parametro1 + " " + parametro2);
+// }
+
+// conParametros("Hello", "Peter");
+// conParametros("Como", "estas?");
+
+// let resultado = 0;
+
+// function sumar(primerNumero, segundoNumero){
+//     resultado = primerNumero + segundoNumero;
+// }
+
+// function mostrar (mensaje){
+//     console.log(mensaje);
+// }
+
+// sumar(20,50);
+// mostrar(resultado);
+
+// EJERCICIO PRACTICO FUNCIONES
+
+// function calculadora (primerNumero, operacion, segundoNumero){
+    
+//     switch(operacion){
+//         case "+":
+//             return primerNumero + segundoNumero;
+//             break;
+//         case "-":
+//             return primerNumero - segundoNumero;
+//             break;
+//         case "*":
+//             return primerNumero * segundoNumero;
+//             break;
+//         case "/":
+//             return primerNumero / segundoNumero;
+//             break;
+//         default:
+//             return 0;
+//             break;
+//     }
+// }
+
+// console.log(calculadora(20, "*", 5));
+// console.log(calculadora(20, "/", 5));
+
+
+//AMBITO O SCOPE
+
+// let resultado = 0; //VARIABLE GLOBAL
+
+// function sumar (primerNumero, segundoNumero){
+//     //VARIABLE LOCAL VIVE Y MUERE EN SU AMBITO
+//     let resultado = primerNumero + segundoNumero;
+//     console.log(resultado);
+// }
+
+// sumar (20, 30);
+
+//FUNCIONES ANONIMAS
+
+// const sumar = function (a,b);{
+//     return a + b;
+// }
+
+// console.log(sumar(1000,2000));
+
+//FUNCIONES FLECHA
+
+// const sumar = (a,b) => a + b;
