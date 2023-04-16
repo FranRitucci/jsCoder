@@ -146,6 +146,8 @@
 // break;
 // }
 
+/*-------------CLASE 04-------------*/
+
 // FUNCIONES
 
 // DECLARAMOS LA FUNCION
@@ -241,6 +243,8 @@
 
 // const sumar = (a,b) => a + b;
 
+/*-------------CLASE 05-------------*/
+
 //OBJETOS
 
 // let nombre = "Homero";
@@ -254,6 +258,8 @@ const persona1 = {
     edad: 39,
     calle: "Av. Siempreviva 742"
 };
+
+// console.log(persona1);
 
 console.log(persona1.nombre);
 console.log(persona1.edad);
@@ -312,6 +318,7 @@ user.rol = "Developer";
 user.team = "Pymes";
 
 console.log(user);
+
 
 //FUNCION CONSTRUCTURA
 
