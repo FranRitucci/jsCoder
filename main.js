@@ -76,13 +76,13 @@
 // }
 
 // CICLOS FOR
-    //incremento
+//incremento
 
 // for (let i= 1; i <=4; i++){
 //     console.log("vuelta N°: " + i);
 // }
 
-    //DECREMENTO
+//DECREMENTO
 
 // for (let i= 4; i>=1;i--){
 //     console.log ("vuelta N°: " + i);
@@ -195,7 +195,7 @@
 // EJERCICIO PRACTICO FUNCIONES
 
 // function calculadora (primerNumero, operacion, segundoNumero){
-    
+
 //     switch(operacion){
 //         case "+":
 //             return primerNumero + segundoNumero;
@@ -253,71 +253,71 @@
 
 //Las variables anteriores estan relacionadas, y por lo tanto, podria agruparlas en un objeto
 
-const persona1 = {
-    nombre: "Homero",
-    edad: 39,
-    calle: "Av. Siempreviva 742"
-};
+// const persona1 = {
+//     nombre: "Homero",
+//     edad: 39,
+//     calle: "Av. Siempreviva 742"
+// };
 
-// console.log(persona1);
+// // console.log(persona1);
 
-console.log(persona1.nombre);
-console.log(persona1.edad);
-console.log(persona1.calle);
+// console.log(persona1.nombre);
+// console.log(persona1.edad);
+// console.log(persona1.calle);
 
-// INSTANCIO EL OBJETO USUARIO
+// // INSTANCIO EL OBJETO USUARIO
 
-const usuario = {
-    nombre: "Natalia",
-    apellido: "Saravia",
-    edad: 40,
-    //defino la propiedad como un string
-    "pais": "Colombia",
-    esPremium: true,
+// const usuario = {
+//     nombre: "Natalia",
+//     apellido: "Saravia",
+//     edad: 40,
+//     //defino la propiedad como un string
+//     "pais": "Colombia",
+//     esPremium: true,
 
-    domicilio:{
-        ciudad: "Posadas",
-        direccion: "Centenario 921",
-        cp: 300
-    },
+//     domicilio:{
+//         ciudad: "Posadas",
+//         direccion: "Centenario 921",
+//         cp: 300
+//     },
 
-    //METODOS, LO QUE EL OBJETO PUEDE O SABE HACER
-    //FORMA LARGA DE DECLARAR UN METODO/FUNCION EN JS
+//     //METODOS, LO QUE EL OBJETO PUEDE O SABE HACER
+//     //FORMA LARGA DE DECLARAR UN METODO/FUNCION EN JS
 
-    sayHello: function (){
-        console.log("Hola mi apellido es:" + usuario.apellido);
-    },
+//     sayHello: function (){
+//         console.log("Hola mi apellido es:" + usuario.apellido);
+//     },
 
-    // FORMA ABREVIADA DE DECLARAR UN METODO/FUNCTION
-    diHola (){
-        console.log("Mi nombre es:" + usuario.nombre);
-    }
-}
+//     // FORMA ABREVIADA DE DECLARAR UN METODO/FUNCTION
+//     diHola (){
+//         console.log("Mi nombre es:" + usuario.nombre);
+//     }
+// }
 
-//ASINGNO AL OBJETO USUARIO UN NUEVO PAR PROPIEDAD-VALOR
-usuario.equipo = "Racing";
+// //ASINGNO AL OBJETO USUARIO UN NUEVO PAR PROPIEDAD-VALOR
+// usuario.equipo = "Racing";
 
-usuario.diHola();
-usuario.sayHello();
+// usuario.diHola();
+// usuario.sayHello();
 
-console.log(usuario);
+// console.log(usuario);
 
-//PARA ACCEDER A LA PROPIEDAD DEFINIDA COMO STRING, UTILIZO LOS CORCHETES []
+// //PARA ACCEDER A LA PROPIEDAD DEFINIDA COMO STRING, UTILIZO LOS CORCHETES []
 
-console.log(usuario["pais"]);
+// console.log(usuario["pais"]);
 
-//OBJETO VACIO
+// //OBJETO VACIO
 
-const user = {};
+// const user = {};
 
-console.log(user);
+// console.log(user);
 
-user.nombre = "Macarena";
-user.apellido = "Villalba";
-user.rol = "Developer";
-user.team = "Pymes";
+// user.nombre = "Macarena";
+// user.apellido = "Villalba";
+// user.rol = "Developer";
+// user.team = "Pymes";
 
-console.log(user);
+// console.log(user);
 
 
 //FUNCION CONSTRUCTURA
@@ -343,72 +343,259 @@ console.log(user);
 
 // METODOS EN OBJETOS JS
 
-let cadena = "HOLA CODER";
+// let cadena = "HOLA CODER";
 
-console.log(cadena.length);
-console.log(cadena.toUpperCase());
-console.log(cadena.toLowerCase());
+// console.log(cadena.length);
+// console.log(cadena.toUpperCase());
+// console.log(cadena.toLowerCase());
 
-// CLASE EN EMC6
+// // CLASE EN EMC6
 
-class Usuario{
-    constructor (nombre, apellido, edad){
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-    }
-}
+// class Usuario {
+//     constructor (nombre, apellido, edad){
+//         this.nombre = nombre;
+//         this.apellido = apellido;
+//         this.edad = edad;
+//     }
+// }
 
-const usuario1 = new Usuario ("Magali", "Nieva", 30);
-console.log (usuario1);
+// const usuario1 = new Usuario ("Magali", "Nieva", 30);
+// console.log(usuario1);
 
-// IN Y FOR IN
-console.log("calle" in usuario1);
+// // IN Y FOR IN
+// console.log("calle" in usuario1);
 
-// QUE ES THIS
+// // QUE ES THIS
 
-const auto = {
-    nombre: "Fuego",
-    marca: "Renault",
-    presentacion (){
-        console.log(this.nombre);
-    },
+// const auto = {
+//     nombre: "Fuego",
+//     marca: "Renault",
+//     presentacion (){
+//         console.log(this.nombre);
+//     },
 
-    //NUEVO OBJETO LOGAN
-    logan: {
-        nombre: "Logan",
-        presentacion (){
-            //THIS AQUI ADQUIERE OTRO VALOR
-            console.log(this.nombre);
-        },
-    }
-}
+//     //NUEVO OBJETO LOGAN
+//     logan: {
+//         nombre: "Logan",
+//         presentacion (){
+//             //THIS AQUI ADQUIERE OTRO VALOR
+//             console.log(this.nombre);
+//         },
+//     }
+// }
 
-auto.presentacion();
+// auto.presentacion();
+// auto.logan.presentacion();
 
 //EJEMPLO PRACTICO
 
-class Producto{
-    constructor(nombre,precio){
-        this.nombre = nombre.toUppercase();
-        this.precio = parseFloat(precio);
-        this.vendido = false;
-    }
+// class Producto {
+//     constructor(nombre,precio){
+//         this.nombre = nombre.toUpperCase();
+//         this.precio = parseFloat(precio);
+//         this.vendido = false;
+//     }
 
-    //METODOS
-    sumaIva (){
-        console.log(this.precio = this.precio * 1.21);
-    }
+//     //METODOS
+//     sumaIva (){
+//         console.log(this.precio = this.precio * 1.21);
+//     }
 
-    vender (){
-        console.log(this.vendido = true);
+//     vender (){
+//         console.log(this.vendido = true);
+//     }
+// }
+
+// //CONSTRUYO DIFERENTES OBJETOS A PARTIR DE LA CLASE PRODUCTO
+// const producto1 = new Producto ("arroz", "500");
+// const producto2 = new Producto ("fideo", "600");
+
+// producto1.sumaIva();
+// producto2.sumaIva();
+// producto1.vender();
+
+/*-------------CLASE 06-----------*/
+
+//ARRAYS
+
+// const arrayA = [];
+// console.log( typeof arrayA);
+
+// //arrays de números
+// const arrayB = [1,2,3,4,5];
+
+// //arrays de string
+// const arrayC = ["C1", "C2","C3"];
+
+// //arrays de booleanos
+
+// const arrayD = [true, false, true, false, false];
+
+// //arrays de mixto
+
+// const arrayE= [true, 1, "Marta", 1.5, "Jorge", true];
+
+// //ACCEDO A LOS ELEMENTOS DEL ARRAY
+// console.log(arrayE[5]);
+
+// //RECORREMOS UN ARRAY
+// const productos = ["harina", 500, "sku302", true, "pureza", "disco"];
+
+// // for (let i=0; i < 6; i++){
+// //   alert(productos[i]);
+// // }
+
+// for (let i= 0; i < productos.length; i++){
+//   alert(productos[i]);
+// }
+
+//METODOS DE LOS ARRAYS
+
+const productos = ["harina", 500, "sku302", true, "pureza", "disco"];
+
+
+// //METODO/PROPIEDAD PARA CONOCER EL TAMAÑO DEL ARRAY
+// console.log(productos.length);
+
+// //AGREGAR ELEMENTOS AL FINAL DEL ARRAY (PUSH)
+// productos.push("leudante");
+
+// console.log(productos);
+// productos.push(200);
+// console.log(productos);
+
+// //AGREGAR ELEMENTOS AL INICIO DEL ARRAY (UNSHIFT)
+// productos.unshift("1kg");
+// console.log(productos);
+// console.log(productos.length);
+
+// //QUITAR ELEMENTO AL INICIO DEL ARRAY (SHIFT)
+// productos.shift();
+// console.log(productos);
+
+// //QUITAR ELEMENTO AL FINAL DEL ARRAY (POP)
+// productos.pop();
+// console.log(productos);
+
+
+// //QUITAR UNO O MAS ELEMENTOS DEL ARRAY (SPLICE)
+// productos.splice(1,2);
+// console.log(productos);
+
+// productos.splice(1,2);
+// console.log(productos);
+
+// //EL METODO JOIN SIRVE PARA SEPARAR ELEMENTOS
+// console.log(productos.join("----"));
+// console.log(productos.join("*"));
+
+// //EL METODO CONCAT SIRVE PARA CONCATENAR ARRAYS
+// const cervezas = ["Brahma", "Estela", "Quilmes", "Andes"];
+
+// // const masVendidos = cervezas.concat(productos);
+// // console.log(masVendidos);
+
+// //EL METODO INDEXOF SIRVE PARA CONOCER LA POSICION DE UN ELEMENTO DENTRO DEL ARRAY
+// console.log(cervezas.indexOf("Quilmes"));
+
+// //EL METODO INCLUDES SIRVE PARA SABER SI UN ELEMENTO ESTÁ O NO DENTRO DEL ARRAY
+// console.log(cervezas.includes("patagonia"));
+
+//EL METODO REVERSE INVIERTE LAS POSICIONES DE LOS ELEMENTOS DEL ARRAY
+// cervezas.reverse();
+// console.log(cervezas);
+
+// //EJEMPLO APLICADO: CARGAR ENTRADAS
+
+// const listaNombres = [];
+// let cantidad = 5;
+
+// //cargamos las nombres en el array mediante 
+
+// console.log(listaNombres);
+
+// do{
+//   //pedimos que se ingrese el nombre
+//   let entrada = prompt ("Ingresar nombre: ");
+//   //vamos guardando cada ingreso al final del array
+//   listaNombres.push(entrada.toUpperCase());
+//   console.log(listaNombres.length);
+// } while (listaNombres.length != cantidad)
+
+// // console.log(listaNombres);
+
+// const nuevaLista = listaNombres.concat (["ANA", "EMMA"]);
+
+
+// alert(nuevaLista.join("\n"));
+
+//EJEMPLO APLICADO: ELIMINAR CUALQUIER ELEMENTO
+// const nombres = ["Rita", "Pedro", "Miguel", "Ana", "Vanesa"];
+
+// console.log(nombres);
+
+// //recibo el elemento a borrar por parámetro
+
+// const eliminar = (nombre) => {
+// //busco su indice en el array
+//     let index = nombres.indexOf(nombre);
+
+// //si existe el indíce, o sea, es distinto de - 1, lo borramos con splice
+//     if (index != -1) {
+//         nombres.splice(index, 1);
+//     }
+// }
+
+// eliminar("Pedro");
+// console.log(nombres);
+
+/*-------------CLASE 07-----------*/
+/*-------------FUNCIONES DE ORDEN SUPERIOR-----------*/
+
+//ABSTRACCION
+//LA MISMA FUNCION, PERO SIRVE PARA CALCULAR CUALQUIER RANGO
+
+// function sumarRangos(min,max) {
+//     let total = 0;
+
+//     for (let i = min; i <= max; i++) {
+//         total += i;
+//     }
+//     return total;
+// }
+
+
+
+// console.log(sumarRangos(1,10)); //55
+// console.log(sumarRangos(2,8)); //35
+// console.log(sumarRangos(2,4)); //9
+
+// let sumarEntreDosYCuatro = sumarRangos(2,4);
+// console.log(sumarEntreDosYCuatro);
+
+//RETORNAR FUNCIONES
+
+// function mayorQue (n){
+//     return (m) => m > n;
+// }
+
+// let mayorQueDiez = mayorQue(10);
+
+// console.log(mayorQueDiez(21));//TRUE
+// console.log(mayorQueDiez(8));//FALSE
+
+//RETORNAR FUNCIONES II
+
+function asignarOperacion (op){
+    if (op=="sumar"){
+        return (a,b) => a + b;
+    } else if (op=="restar"){
+        return (a,b) => a - b;
     }
 }
 
-//CONSTRUYO DIFERENTES OBJETOS A PARTIR DE LA CLASE PRODUCTO
-const producto1 = new Producto ("arroz", "500");
-const producto2 = new Producto ("fideo", "550");
+let suma = asignarOperacion ("sumar");
+let resta = asignarOperacion ("restar");
 
-producto1.sumaIva();
-producto2.sumaIva();
-producto1.vender();
+console.log(suma(10,20));
+console.log(resta(5,2));
